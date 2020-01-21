@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
+
+
 public class MainActivity extends AppCompatActivity {
     public TextView number;
     public Random rng = new Random(6);
