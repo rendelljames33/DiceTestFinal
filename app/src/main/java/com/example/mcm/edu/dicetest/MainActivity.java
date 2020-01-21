@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         rollDice();
+                        //test
                         //Intent intent = new Intent(MainActivity.this,Main2Activity.class);
                         //startActivity(intent);
                     }
