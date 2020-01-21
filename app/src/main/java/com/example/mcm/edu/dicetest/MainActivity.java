@@ -18,14 +18,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Button roll = findViewById(R.id.button);
+        number.setText("");
         Random rng = new Random(6);
-        Button roll = findViewById(R.id.button);
+        roll.setText("Roll");
         number = findViewById(R.id.name);
         roll.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         rollDice();
+                        roll.setText("Re-roll");
 
                     }
                 }
