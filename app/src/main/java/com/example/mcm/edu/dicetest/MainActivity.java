@@ -1,10 +1,9 @@
 package com.example.mcm.edu.dicetest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.Random;
-
-
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
@@ -19,10 +18,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Button roll = findViewById(R.id.button);
+        final Button second = findViewById(R.id.twelvedice);
+        number = findViewById(R.id.name);
         number.setText("");
         Random rng = new Random(6);
         roll.setText("Roll");
-        number = findViewById(R.id.name);
+        second.setText("Click here for 12 dice");
+
         roll.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -30,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
                         rollDice();
                         roll.setText("Re-roll");
 
+                    }
+                }
+        );
+        second.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent twelve = new Intent(MainActivity.this,Main2Activity.class);
+                        startActivity(twelve);
                     }
                 }
         );
