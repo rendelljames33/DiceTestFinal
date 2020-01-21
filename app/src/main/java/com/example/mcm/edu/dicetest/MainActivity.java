@@ -1,5 +1,6 @@
 package com.example.mcm.edu.dicetest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.Random;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         rollDice();
+                        //Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                        //startActivity(intent);
                     }
                 }
         );
