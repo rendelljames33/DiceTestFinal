@@ -75,6 +75,30 @@ public class Main2Activity extends AppCompatActivity {
                 number2.setText("You got 6");
                 Toast.makeText(Main2Activity.this, "You got 6", Toast.LENGTH_LONG).show();
                 break;
+            case(7):
+                number2.setText("You got 7");
+                Toast.makeText(Main2Activity.this, "You got 7", Toast.LENGTH_LONG).show();
+                break;
+            case(8):
+                number2.setText("You got 8");
+                Toast.makeText(Main2Activity.this, "You got 8", Toast.LENGTH_LONG).show();
+                break;
+            case(9):
+                number2.setText("You got 9");
+                Toast.makeText(Main2Activity.this, "You got 9", Toast.LENGTH_LONG).show();
+                break;
+            case(10):
+                number2.setText("You got 10");
+                Toast.makeText(Main2Activity.this, "You got 10", Toast.LENGTH_LONG).show();
+                break;
+            case(11):
+                number2.setText("You got 11");
+                Toast.makeText(Main2Activity.this, "You got 11", Toast.LENGTH_LONG).show();
+                break;
+            case(12):
+                number2.setText("You got 12");
+                Toast.makeText(Main2Activity.this, "You got 12", Toast.LENGTH_LONG).show();
+                break;
         }
     }
 }
