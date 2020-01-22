@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         final Button roll = findViewById(R.id.button);
         final Button second = findViewById(R.id.twelvedice);
         dc = findViewById(R.id.dice);
-        Random rng = new Random(6);
         roll.setText("Roll");
         second.setText("Click here for 12 dice");
 
