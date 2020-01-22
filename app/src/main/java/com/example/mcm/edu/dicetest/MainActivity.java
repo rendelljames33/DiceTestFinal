@@ -5,13 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.Random;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    public TextView number;
+    public ImageView dc;
     public Random rng = new Random(6);
 
     @Override
@@ -21,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Button roll = findViewById(R.id.button);
         final Button second = findViewById(R.id.twelvedice);
-        number = findViewById(R.id.name);
-        number.setText("");
+        dc = findViewById(R.id.dice);
         Random rng = new Random(6);
         roll.setText("Roll");
         second.setText("Click here for 12 dice");
@@ -53,27 +53,27 @@ public class MainActivity extends AppCompatActivity {
         int randomNumber = rng.nextInt(6)+1;
         switch (randomNumber){
             case(1):
-                number.setText("You got 1");
+                dc.setImageResource(R.drawable.dice1);
                 Toast.makeText(MainActivity.this, "You got 1", Toast.LENGTH_LONG).show();
                 break;
             case(2):
-                number.setText("You got 2");
+                dc.setImageResource(R.drawable.dice2);
                 Toast.makeText(MainActivity.this, "You got 2", Toast.LENGTH_LONG).show();
                 break;
             case(3):
-                number.setText("You got 3");
+                dc.setImageResource(R.drawable.dice3);
                 Toast.makeText(MainActivity.this, "You got 3", Toast.LENGTH_LONG).show();
                 break;
             case(4):
-                number.setText("You got 4");
+                dc.setImageResource(R.drawable.dice4);
                 Toast.makeText(MainActivity.this, "You got 4", Toast.LENGTH_LONG).show();
                 break;
             case(5):
-                number.setText("You got 5");
+                dc.setImageResource(R.drawable.dice5);
                 Toast.makeText(MainActivity.this, "You got 5", Toast.LENGTH_LONG).show();
                 break;
             case(6):
-                number.setText("You got 6");
+                dc.setImageResource(R.drawable.dice6);
                 Toast.makeText(MainActivity.this, "You got 6", Toast.LENGTH_LONG).show();
                 break;
         }
