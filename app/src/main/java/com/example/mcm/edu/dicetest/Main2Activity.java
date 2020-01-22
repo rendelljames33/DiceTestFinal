@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 public class Main2Activity extends AppCompatActivity {
     public ImageView dice1;
     public ImageView dice2;
