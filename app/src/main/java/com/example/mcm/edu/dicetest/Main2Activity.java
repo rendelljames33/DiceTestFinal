@@ -24,7 +24,6 @@ public class Main2Activity extends AppCompatActivity {
         imageView1 = findViewById(R.id.imageView1);
         imageView2 = findViewById(R.id.imageView2);
         roll2.setText("Roll");
-        second2.setText("Back");
 
         roll2.setOnClickListener(
                 new View.OnClickListener() {

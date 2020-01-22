@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
         final Button roll = findViewById(R.id.button);
         final Button second = findViewById(R.id.twelvedice);
         dc = findViewById(R.id.dice);
-        roll.setText("Roll");
-        second.setText("Click here for 12 dice");
+        second.setText("Click here for 2 dice");
 
         roll.setOnClickListener(
                 new View.OnClickListener() {
