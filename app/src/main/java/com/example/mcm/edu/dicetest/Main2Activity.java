@@ -9,7 +9,6 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
 
-
 public class Main2Activity extends AppCompatActivity {
     public TextView number2;
     public Random rng2 = new Random(12);
