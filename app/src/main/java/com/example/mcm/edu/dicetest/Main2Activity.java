@@ -14,6 +14,7 @@ public class Main2Activity extends AppCompatActivity {
     public ImageView imageView2;
     public Random rng2 = new Random(12);
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
