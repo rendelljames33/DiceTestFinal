@@ -23,7 +23,7 @@ public class Main2Activity extends AppCompatActivity {
         final Button second2 = findViewById(R.id.back);
         imageView1 = findViewById(R.id.imageView1);
         imageView2 = findViewById(R.id.imageView2);
-        roll2.setText("Roll");
+
 
         roll2.setOnClickListener(
                 new View.OnClickListener() {
@@ -31,7 +31,6 @@ public class Main2Activity extends AppCompatActivity {
                     public void onClick(View v) {
 
                         rollDice2();
-                        roll2.setText("Re-roll");
 
 
                     }
