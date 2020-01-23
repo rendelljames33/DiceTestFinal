@@ -1,6 +1,7 @@
 package com.example.mcm.edu.dicetest;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.Random;
@@ -8,6 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Button;
 import android.widget.Toast;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Main2Activity extends AppCompatActivity {
     public ImageView imageView1;
@@ -24,14 +27,21 @@ public class Main2Activity extends AppCompatActivity {
         imageView1 = findViewById(R.id.imageView1);
         imageView2 = findViewById(R.id.imageView2);
 
-
         roll2.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
                         rollDice2();
+                        roll2.setEnabled(false);
 
+                        final Runnable enableButton = new Runnable() {
+                            @Override
+                            public void run() {
+                                roll2.setEnabled(true);
+                            }
+                        };
+                        new Handler().postDelayed(enableButton,5000);
 
                     }
                 }

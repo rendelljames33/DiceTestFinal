@@ -1,6 +1,7 @@
 package com.example.mcm.edu.dicetest;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.Random;
@@ -29,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         rollDice();
+                        roll.setEnabled(false);
+
+                        final Runnable enableButton = new Runnable() {
+                            @Override
+                            public void run() {
+                                roll.setEnabled(true);
+                            }
+                        };
+                        new Handler().postDelayed(enableButton,5000);
 
                     }
                 }
